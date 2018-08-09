@@ -6,8 +6,9 @@
         {{post.title}}  <span class="badge">{{post.createdAt | date:'short'}}</span>
     </h2>
     <p>
-        {{post.content}}
+        {{post.content}}  
     </p>
+    <em>likes : {{post.loveIts}}</em><br/>
     <input type="button" class="btn btn-success" (click)="onLoveIt()" value="Love It" />
     <input type="button" class="btn btn-danger" (click)="onDoNotLoveIt()" value="Do Not Love It"/>
 
